@@ -1,0 +1,21 @@
+{
+  "name": "gpt-i18n-translator",
+  "version": "1.0.0",
+  "description": "A script to check and update missing translations via GPT",
+  "main": "index.js",
+  "author": "Bernard Teske",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "nodemon": "^3.1.4",
+    "openai": "^4.52.0"
+  },
+  "bin": {
+    "gpt-i18n": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js es de/translation.json es/translation.json"
+  }
+}
